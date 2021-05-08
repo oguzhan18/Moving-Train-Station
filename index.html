@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="cloud"></div>
+	<div class="tree"><br><br><br><br><br><div class="tree-s"></div></div><br>
+	<div class="pole">
+
+	</div>
+<div class="container">
+<div class="tube">
+<div class="rail-g">
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<p class="rail-s">|</p>
+	<div class="rail-l"></div>
+	<div class="rail"></div>
+</div>
+</div>
+
+	<div class="tube__container">
+	<div class="tube__train">
+		<div class="driver driver--front"></div>
+		<div class="driver driver--back"></div>
+		<div class="window"></div>
+		<span class="door">
+			<div class="window"></div>
+		</span>
+		<span class="door">
+			<div class="window"></div>
+		</span>
+		<span class="door">
+			<div class="window"></div>
+		</span>
+		<span class="door">
+			<div class="window"></div>
+		</span>
+		<span class="door">
+			<div class="window"></div>
+		</span>
+	</div>
+	</div>
+</div> 
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ <script>
+	 var cloudWidth = $(".cloud").width();
+
+function cloudHeight(){
+    $(".cloud").css({'height':cloudWidth+'px'});
+};
+
+$(document).ready(function(){
+  cloudHeight();  
+});
+                  
+$(window).resize(function() {
+  cloudWidth = $(".cloud").width();
+  cloudHeight();
+});
+ </script>
+</body>
+</html>
